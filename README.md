@@ -1,144 +1,137 @@
-# Thank You Card Generator
+# Ride of Reflections - Thank You Card Generator
 
-A beautiful Next.js application that generates personalized thank you cards with QR code sharing functionality.
+A beautiful Next.js application for the Divine Mercy Church's cycling event that generates personalized thank you cards with QR code sharing functionality.
 
-## Features
+## 🚴‍♀️ About
 
-- 📝 Name input form on the home page
-- 💳 Personalized thank you card generation
-- 📱 **Static QR Code**: Takes users to the home page (name entry form)
-- 🎯 **Dynamic QR Code**: Takes users to personalized thank you cards
-- 🎨 Modern and responsive design
-- ⚡ Built with Next.js 14 and TypeScript
-- 🚀 Ready for Vercel deployment
+This application was created for the **"Ride of Reflections: A Journey of Faith, Fun and Fellowship"** cycling event organized by Divine Mercy Church. It allows event participants to receive personalized thank you cards and share them with others.
 
-## Getting Started
+## ✨ Features
 
-### Prerequisites
+- 📝 **Name Entry Form**: Simple form for participants to enter their name
+- 💳 **Personalized Thank You Cards**: Beautiful cards with cycling-themed design
+- 🏛️ **Church Logo**: Divine Mercy Church logo prominently displayed
+- 📱 **Static QR Code**: Pre-generated QR code that takes users to the form
+- 🎯 **Dynamic QR Code**: Each participant gets their own shareable QR code
+- 🎨 **Modern Design**: Responsive design with cycling-themed animations
+- ⚡ **Fast Performance**: Built with Next.js 14 and TypeScript
 
-- Node.js 18+ installed on your machine
-- npm or yarn package manager
+## 🚀 Live Website
 
-### Installation
+**Visit**: [https://cyclingevent.vercel.app](https://cyclingevent.vercel.app)
 
-1. Install dependencies:
-```bash
-npm install
-# or
-yarn install
-```
+## 📋 How It Works
 
-2. Run the development server:
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-## How It Works
-
-### For Users
-1. **Scan QR Code**: Users scan your static QR code
+### For Event Participants
+1. **Scan QR Code**: Participants scan the static QR code at the event
 2. **Enter Name**: They're taken to the form page and enter their name
-3. **View Card**: They click "OK" and see their personalized thank you card
-4. **Share**: They can click "Show QR Code" to get their own unique shareable link
+3. **View Card**: They see their personalized thank you card with cycling theme
+4. **Share**: They can generate their own QR code to share their card
 
-### Static QR Code (Admin Only)
-You (the admin) generate ONE static QR code that links to your home page:
-1. Deploy your site to Vercel
-2. Update the URL in `generate-static-qr.js`
-3. Run `node generate-static-qr.js`
-4. Print the QR code from `public/static-qr.png`
-5. Anyone scanning it will be taken to the form page
+### For Event Organizers
+- **Static QR**: Pre-generated QR code links to the form page
+- **Easy Setup**: Simple deployment to Vercel
+- **Professional Design**: Church branding with cycling event theme
 
-## Deployment to Vercel
+## 🛠️ Technical Details
 
-### Method 1: Using Vercel CLI
-
-1. Install Vercel CLI:
-```bash
-npm install -g vercel
-```
-
-2. Deploy:
-```bash
-vercel
-```
-
-3. Follow the prompts to complete deployment
-
-### Method 2: Using GitHub (Recommended)
-
-1. Push your code to a GitHub repository
-2. Go to [vercel.com](https://vercel.com)
-3. Click "New Project"
-4. Import your GitHub repository
-5. Vercel will auto-detect Next.js and deploy automatically
-
-## Generate Your Static QR Code
-
-After deploying to Vercel:
-
-1. **Get your Vercel URL** (e.g., `https://your-app-name.vercel.app`)
-
-2. **Update the script**:
-   - Open `generate-static-qr.js`
-   - Replace `'https://your-app-name.vercel.app'` with your actual Vercel URL
-
-3. **Generate the QR code**:
-```bash
-node generate-static-qr.js
-```
-
-4. **Find your QR code**:
-   - Location: `public/static-qr.png`
-   - This QR code links to your form page
-   - Print it, share it, use it anywhere!
-
-5. **Users scan it** → Taken to form page → Enter name → See thank you card
-
-## Environment
-
-No environment variables are required for basic functionality.
-
-## Tech Stack
-
+### Tech Stack
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
-- **QR Code**: qrcode library
+- **QR Code Generation**: qrcode library
 - **Styling**: CSS Modules
 - **Deployment**: Vercel
 
-## Project Structure
-
+### Project Structure
 ```
 ├── app/
 │   ├── layout.tsx          # Root layout
-│   ├── page.tsx            # Home page (name input)
+│   ├── page.tsx            # Home page (name entry form)
 │   ├── page.module.css     # Home page styles
 │   ├── globals.css         # Global styles
 │   └── thankyou/
-│       ├── page.tsx        # Thank you card page (dynamic QR)
-│       └── thankyou.module.css  # Thank you page styles
+│       ├── page.tsx        # Thank you card page
+│       └── thankyou.module.css  # Thank you card styles
 ├── public/
-│   └── static-qr.png       # Your static QR code (generated)
-├── generate-static-qr.js   # Script to generate your QR code
+│   ├── logo.png            # Divine Mercy Church logo
+│   └── static-qr.png       # Static QR code (generated)
+├── generate-static-qr.js   # Script to generate static QR
 ├── package.json
 ├── tsconfig.json
 ├── next.config.js
 └── README.md
 ```
 
-## Customization
+## 🎨 Design Features
 
-- Modify colors in CSS files to match your brand
-- Update the thank you message in `app/thankyou/page.tsx`
-- Add more fields to the form in `app/page.tsx`
-- Customize QR code styling in the QR generation options
+### Thank You Card
+- **Church Logo**: Divine Mercy Church logo in circular container
+- **Cycling Theme**: 🚴‍♀️ and 🏆 emojis with animations
+- **Personalized Message**: Heartfelt cycling event thank you message
+- **Professional Layout**: Clean, modern design with proper typography
 
-## License
+### Responsive Design
+- **Desktop**: Full-featured layout with larger elements
+- **Mobile**: Optimized for mobile devices
+- **Cross-browser**: Works on all modern browsers
 
-MIT
+## 🔧 Development
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+
+### Installation
+```bash
+# Clone the repository
+git clone [repository-url]
+
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Open http://localhost:3000
+```
+
+### Generate Static QR Code
+```bash
+# Update the URL in generate-static-qr.js
+# Run the script
+node generate-static-qr.js
+
+# Find your QR code at public/static-qr.png
+```
+
+## 📱 QR Code System
+
+### Static QR Code (Event Organizers)
+- **Purpose**: Takes participants to the name entry form
+- **Usage**: Print on posters, flyers, or display at event
+- **Generated**: Using `generate-static-qr.js` script
+
+### Dynamic QR Code (Participants)
+- **Purpose**: Takes others to that person's specific thank you card
+- **Usage**: Participants can share their personalized card
+- **Generated**: Automatically when they view their thank you card
+
+## 🎯 Event Information
+
+**Event Name**: Ride of Reflections  
+**Theme**: A Journey of Faith, Fun and Fellowship  
+**Organizer**: Divine Mercy Church  
+**Purpose**: Cycling event with spiritual reflection and community building
+
+## 📄 License
+
+MIT License - Feel free to use this project for your own events!
+
+## 🤝 Contributing
+
+This project was created specifically for the Divine Mercy Church cycling event. For modifications or customizations, please contact the development team.
+
+---
+
+**Made with ❤️ for the Divine Mercy Church Cycling Community**
 
