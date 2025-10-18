@@ -55,17 +55,32 @@ function ThankYouContent() {
         <div className={styles.cardInner}>
           <div className={styles.logoContainer}>
             <img 
-              src="/logo.jpg" 
+              src="/logo.png" 
               alt="Divine Mercy Church Logo" 
               className={styles.logo}
             />
           </div>
-          <div className={styles.decorTop}>🚴‍♂️</div>
+          <div className={styles.decorTop}>🚴‍♀️</div>
           <h1 className={styles.thankYou}>Thank You</h1>
           <h2 className={styles.name}>{name}!</h2>
-          <p className={styles.message}>
-            Thank you for participating in our cycling event! Your enthusiasm and spirit made this event truly special. 
-            We hope you had an amazing time and look forward to seeing you at our next cycling adventure!
+          <h3 className={styles.subheading}>for Being Part of the Ride of Reflections 🚴‍♀️✨</h3>
+          <p className={styles.tagline}><em>A Journey of Faith, Fun and Fellowship</em></p>
+          <p className={styles.messageParagraph}>
+            What a journey it has been! Your enthusiasm, smiles, and open hearts made the Ride of Reflections truly unforgettable. Together, we pedaled not just through roads but through moments of <strong>faith, friendship, laughter, and growth.</strong>
+          </p>
+          <p className={styles.messageParagraph}>
+            Each mile you rode was a reminder that faith moves us forward, fun keeps us going, and fellowship makes every journey meaningful. You didn't just ride — you reflected, encouraged, and inspired.
+          </p>
+          <p className={styles.messageParagraph}>
+            As this journey ends, may the memories, insights, and bonds you've built continue to guide your path ahead. Remember — every reflection leads to a new beginning. 🌅
+          </p>
+          <p className={styles.tagline}><em>Thank you for being part of this beautiful ride.</em></p>
+          <p className={styles.messageParagraph}>
+            Keep the spirit alive — keep riding, keep reflecting, keep believing! 💛
+          </p>
+          <p className={styles.signature}>
+            With heartfelt gratitude<br/>
+            Team Cycling Pilgrimage 🫶🏻
           </p>
           <div className={styles.decorBottom}>🏆</div>
         </div>

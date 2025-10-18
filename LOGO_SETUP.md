@@ -6,13 +6,13 @@ To complete the thank you card setup, you need to add the Divine Mercy Church lo
 
 ### Steps:
 
-1. **Save the logo image** as `logo.jpg` in the `public` folder
-2. **Ensure the image** is a JPG file with good quality
+1. **Save the logo image** as `logo.png` in the `public` folder
+2. **Ensure the image** is a PNG file with a transparent background (recommended)
 3. **Optimal size**: Around 200x200 pixels or higher resolution
 
 ### File Location:
 ```
-public/logo.jpg
+public/logo.png
 ```
 
 ### What the logo will do:
