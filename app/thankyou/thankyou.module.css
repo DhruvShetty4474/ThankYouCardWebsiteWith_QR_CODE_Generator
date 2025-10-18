@@ -36,9 +36,31 @@
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+.logoContainer {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 3px solid #667eea;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
 .decorTop {
   font-size: 3rem;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   animation: bounce 1s ease-in-out infinite;
 }
 
@@ -54,6 +76,16 @@
 .decorBottom {
   font-size: 3rem;
   margin-top: 1rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .thankYou {
@@ -199,6 +231,18 @@
 
   .cardInner {
     padding: 2rem 1.5rem;
+  }
+
+  .logoContainer {
+    top: -20px;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo {
+    width: 45px;
+    height: 45px;
   }
 
   .thankYou {

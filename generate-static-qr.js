@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Change this to your deployed Vercel URL after deployment
-const YOUR_WEBSITE_URL = 'https://your-app-name.vercel.app';
+const YOUR_WEBSITE_URL = 'https://cyclingevent.vercel.app';
 
 async function generateStaticQR() {
   try {

@@ -53,13 +53,21 @@ function ThankYouContent() {
     <main className={styles.main}>
       <div className={styles.card}>
         <div className={styles.cardInner}>
-          <div className={styles.decorTop}>✨</div>
+          <div className={styles.logoContainer}>
+            <img 
+              src="/logo.jpg" 
+              alt="Divine Mercy Church Logo" 
+              className={styles.logo}
+            />
+          </div>
+          <div className={styles.decorTop}>🚴‍♂️</div>
           <h1 className={styles.thankYou}>Thank You</h1>
           <h2 className={styles.name}>{name}!</h2>
           <p className={styles.message}>
-            We appreciate your time and presence. Your contribution means a lot to us!
+            Thank you for participating in our cycling event! Your enthusiasm and spirit made this event truly special. 
+            We hope you had an amazing time and look forward to seeing you at our next cycling adventure!
           </p>
-          <div className={styles.decorBottom}>💝</div>
+          <div className={styles.decorBottom}>🏆</div>
         </div>
 
         <div className={styles.actions}>
