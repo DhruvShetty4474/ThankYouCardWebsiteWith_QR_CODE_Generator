@@ -39,7 +39,7 @@
 .logoContainer {
   position: absolute;
   top: -30px;
-  right: 15px;
+  right: 5px;
   width: 120px;
   height: 120px;
   background: white;
@@ -263,7 +263,7 @@
 
   .logoContainer {
     top: -25px;
-    right: 10px;
+    right: 5px;
     width: 90px;
     height: 90px;
   }
