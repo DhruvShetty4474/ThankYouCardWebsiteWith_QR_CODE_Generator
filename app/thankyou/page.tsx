@@ -1,10 +1,10 @@
 'use client'
 
 import { useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import styles from './thankyou.module.css'
 
-export default function ThankYou() {
+function ThankYouContent() {
   const searchParams = useSearchParams()
   const name = searchParams.get('name') || 'Guest'
   const [qrCode, setQrCode] = useState('')
@@ -94,6 +94,14 @@ export default function ThankYou() {
         </a>
       </div>
     </main>
+  )
+}
+
+export default function ThankYou() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ThankYouContent />
+    </Suspense>
   )
 }
 
